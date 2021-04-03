@@ -1,8 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<body>
-<title> This is a Git example</Title>OB
-<h1> Git is a version control</h1>
-<h2> Git is a version control system</h2>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="spin.css" />
+
+    <script type="text/javascript" src="custom.js"></script>
+    <script type="text/javascript" src="custom.umd.js"></script>
+
+
 </head>
+
+<body>
+    <div id="spinner"></div>
 </body>
 
+<script>
+    let opts = {
+            lines: 13,
+            length: 28,
+            width: 14,
+            radius: 42,
+            scale: 1,
+            corners: 1,
+            color: '#FFF',
+            opacity: 0.25,
+            rotate: 0,
+            direction: 1,
+            speed: 1,
+            trail: 60,
+            fps: 20,
+            zIndex: 2e9,
+            className: 'spinner',
+            top: '50%',
+            left: '50%',
+            shadow: false,
+            hwaccel: false,
+            position: 'absolute',
+        },
+        target = document.getElementById('spinner'),
+        spinner = new Spinner(opts).spin(target);
+</script>
+
+</html>
